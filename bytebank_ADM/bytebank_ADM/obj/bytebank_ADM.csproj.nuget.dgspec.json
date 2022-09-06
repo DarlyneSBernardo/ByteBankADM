@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Alura\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj": {}
+    "C:\\GitHub\\ByteBankADM\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj": {}
   },
   "projects": {
-    "C:\\Alura\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj": {
+    "C:\\GitHub\\ByteBankADM\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Alura\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj",
+        "projectUniqueName": "C:\\GitHub\\ByteBankADM\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj",
         "projectName": "bytebank_ADM",
-        "projectPath": "C:\\Alura\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj",
+        "projectPath": "C:\\GitHub\\ByteBankADM\\bytebank_ADM\\bytebank_ADM\\bytebank_ADM.csproj",
         "packagesPath": "C:\\Users\\darly\\.nuget\\packages\\",
-        "outputPath": "C:\\Alura\\bytebank_ADM\\bytebank_ADM\\obj\\",
+        "outputPath": "C:\\GitHub\\ByteBankADM\\bytebank_ADM\\bytebank_ADM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\darly\\AppData\\Roaming\\NuGet\\NuGet.Config",

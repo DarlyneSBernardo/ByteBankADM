@@ -1,11 +1,14 @@
 ﻿using bytebank_ADM.Funcionarios;
+using bytebank_ADM.SistemaInterno;
 using bytebank_ADM.Utilitario;
 
 
 
 Console.WriteLine("Boas Vindas, ao ByteBank Administração!");
 
-CalcularBonificacao();
+//CalcularBonificacao();
+UsarSistema();
+
 #region Codigo antigo
 //GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
 
@@ -46,6 +49,9 @@ void CalcularBonificacao()
     Designer designer = new Designer("833.222.048-39");
     designer.Nome = "Pedro";
 
+    Desenvolvedor desenvolvedor = new Desenvolvedor("536.579.458-25");
+    desenvolvedor.Nome = "Samya";
+
     Diretor diretor = new Diretor("159.753.398-04");
     diretor.Nome = "Paula";
 
@@ -59,8 +65,33 @@ void CalcularBonificacao()
     gerenciador.Registrar(diretor);
     gerenciador.Registrar(auxiliar);
     gerenciador.Registrar(gerente);
+    gerenciador.Registrar(desenvolvedor);
 
     Console.WriteLine("Total de Bonificação: " + gerenciador.GetBonificacao());
 }
+
+void UsarSistema()
+{
+    SistemaInterno sistemaInterno = new SistemaInterno();
+
+    Diretor diretora = new Diretor("145.146.789-56");
+    diretora.Nome = "Roberta";
+    diretora.Login = "roberta.diretora";
+    diretora.Senha = "123";
+
+    GerenteDeContas gerente = new GerenteDeContas("145.146.789-56");
+    gerente.Nome = "Ursula";
+    gerente.Login = "ursula.gerente";
+    gerente.Senha = "321";
+
+    //Funcionario func = new Designer("326.985.628-89");
+    //func.Nome = "Pedro";
+    //func.Senha = "123";
+
+    //sistemaInterno.Logar(func, "123");
+    sistemaInterno.Logar(diretora, "ursula", "123");
+    sistemaInterno.Logar(gerente, gerente.Login, "123");
+}
+
 
 Console.ReadKey();

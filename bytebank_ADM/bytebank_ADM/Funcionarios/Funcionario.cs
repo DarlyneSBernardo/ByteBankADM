@@ -25,15 +25,11 @@ namespace bytebank_ADM.Funcionarios
         public string Nome { get; set; }
         public string CPF { get; private set; }
         public double Salario { get; protected set; }
-        
-        public virtual double GetBonificacao()
-        {
-            return Salario * 0.1;                     
-        }
 
-        public virtual void AumentarSalario()
-        {
-            this.Salario *= 1.1;
-        }    
+        //Toda classe que herdar Funcionário precisará implementar esses métodos obrigatoriamente por serem abstratos.
+        //Métodos abstratos só podem existir dentro de classes abstratas, classes completas não podem ter métodos abstratos.
+        public abstract double GetBonificacao();
+
+        public abstract void AumentarSalario();        
     }
 }
