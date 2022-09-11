@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_ADM.Funcionarios
 {
-    public  class GerenteDeContas:Autenticavel
+    public  class GerenteDeContas:FuncionarioAutenticavel, IBonificacaoFuncionario
     {
         public GerenteDeContas(string cpf) : base(cpf, 4000)
         {
@@ -16,7 +16,7 @@ namespace bytebank_ADM.Funcionarios
 
         public override void AumentarSalario()
         {
-            Salario *= 1.25;
+            Salario *= 1.15;
         }
 
         public override double GetBonificacao()

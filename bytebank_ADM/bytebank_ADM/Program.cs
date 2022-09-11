@@ -1,4 +1,5 @@
 ﻿using bytebank_ADM.Funcionarios;
+using bytebank_ADM.ParceriaComercial;
 using bytebank_ADM.SistemaInterno;
 using bytebank_ADM.Utilitario;
 
@@ -76,21 +77,26 @@ void UsarSistema()
 
     Diretor diretora = new Diretor("145.146.789-56");
     diretora.Nome = "Roberta";
-    diretora.Login = "roberta.diretora";
+    //diretora.Login = "roberta.diretora";
     diretora.Senha = "123";
 
     GerenteDeContas gerente = new GerenteDeContas("145.146.789-56");
     gerente.Nome = "Ursula";
-    gerente.Login = "ursula.gerente";
+    //gerente.Login = "ursula.gerente";
     gerente.Senha = "321";
+
+    ParceiroComercial parceiro = new ParceiroComercial();
+    //parceiro.Login = "joao.parceiro";
+    parceiro.Senha = "123";
 
     //Funcionario func = new Designer("326.985.628-89");
     //func.Nome = "Pedro";
     //func.Senha = "123";
 
     //sistemaInterno.Logar(func, "123");
-    sistemaInterno.Logar(diretora, "ursula", "123");
-    sistemaInterno.Logar(gerente, gerente.Login, "123");
+    sistemaInterno.Logar(diretora, "123");
+    sistemaInterno.Logar(gerente, "123");
+    sistemaInterno.Logar(parceiro, "123");
 }
 
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bytebank_ADM.Funcionarios
 {
-    public class Diretor: Autenticavel
+    public class Diretor:FuncionarioAutenticavel, IBonificacaoFuncionario
     {
         public Diretor(string cpf) : base(cpf, 5000)
         {
@@ -20,7 +20,7 @@ namespace bytebank_ADM.Funcionarios
 
         public override void AumentarSalario()
         {
-            this.Salario *= 1.15;
+            this.Salario *= 1.25;
         }
     }
 }
